@@ -13,17 +13,41 @@
 <body>
 <div class="detail">
     <div class="vizitka">
+
+      [#if vizitka.jmeno?has_content]
         <div class="jmeno">${vizitka.jmeno}</div>
+      [/#if]
+
+        [#if vizitka.firma?has_content]
         <div class="firma">${vizitka.firma}</div>
+        [/#if]
+
         <div class="udaje">
             <div class="adresa">
+
+                [#if vizitka.ulice?has_content]
                 <div>${vizitka.ulice}</div>
-                <div><span>${vizitka.obecPsc}</span> Praha 1</div>
+                [/#if]
+
+                [#if vizitka.obecPsc?has_content]
+                <div><span>${vizitka.obecPsc}</span> </div>
+                [/#if]
             </div>
+
             <div class="kontakty">
+
+              [#if vizitka.email?has_content]
                 <div><i class="las la-at"></i> <span>${vizitka.email}</span></div>
+              [/#if]
+
+              [#if vizitka.telefon?has_content]
                 <div><i class="las la-phone-alt"></i> <span>${vizitka.telefon}</span></div>
-                <div><i class="las la-globe"></i> <span>${vizitka.web}</span></div>
+              [/#if]
+
+              [#if vizitka.web?has_content]
+                 <div><i class="las la-globe"></i> <span>${vizitka.web}</span></div>
+              [/#if]
+
             </div>
         </div>
     </div>

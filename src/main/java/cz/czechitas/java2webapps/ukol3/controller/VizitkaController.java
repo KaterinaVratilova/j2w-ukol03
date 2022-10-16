@@ -15,10 +15,10 @@ import java.util.List;
 public class VizitkaController {
 
   private final List<Vizitka> seznamVizitek = List.of(
-new Vizitka("Dita (Přikrylová) Formánková", "Czechitas z. s.","Václavské náměstí 837/11", "110 00", "Václavské náměstí 837/11, 110 00 Praha 1", "dita@czechitas.cs", "+420 800123456", "www.czechitas.cz" ),
-new Vizitka("Barbora Bühnová", "Czechitas z. s.","Václavské náměstí 837/11", "110 00", "Václavské náměstí 837/11, 110 00 Praha 1", "dita@czechitas.cs", "+420 800123456", "www.czechitas.cz" ),
-new Vizitka("Monika Ptáčníková", "Czechitas z. s.","Václavské náměstí 837/11", "110 00", "Václavské náměstí 837/11, 110 00 Praha 1", "dita@czechitas.cs", "+420 800123456", "www.czechitas.cz" ),
-new Vizitka("Mirka Zatloukalová", "Czechitas z. s.","Václavské náměstí 837/11", "110 00", "Václavské náměstí 837/11, 110 00 Praha 1", "dita@czechitas.cs", "+420 800123456", "www.czechitas.cz" )
+new Vizitka("PhDr. Michal Lukeš", "Národní muzeum","Václavské náměstí 68", "110 01 Praha 1", "Václavské náměstí 68, 110 00 Praha 1", "sekretariat@nm.cz", null, "www.nm.cz" ),
+new Vizitka("Dott. Emanuelle Gadaleta", "České muzeum hudby","Karmelitská 2", "118 00 Praha 1", "Karmelitská 2, 118 00 Praha 1", null, "+420 800123456", "www.nm.cz/ceske-muzeum-hudby" ),
+new Vizitka("PhDr. Eva Ditterová", "Náprstkovo muzeum asijských, afrických a amerických kultur","Betlémské nám. 1", "110 00, Praha 1", "Betlémské nám. 1, 110 00 Praha 1", null, "+420 800123456", "www.nm.cz/naprstkovo-muzeum-asijskych-africkych-a-americkych-kultur" ),
+new Vizitka("RNDr. Ing. Ivo Macek", "Přírodovědecké muzeum","Cirkusová 1740", "190 00 Praha 9 – Horní Počernice", "Cirkusová 1740, 190 00 Praha 9 – Horní Počernice", "ivo.macek@nm.cz", "+420 800123456", "www.nm.cz/prirodovedecke-muzeum" )
   );
 
   @GetMapping("/")
